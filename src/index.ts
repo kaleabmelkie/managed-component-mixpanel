@@ -157,8 +157,8 @@ export const getTrackEventArgs = (
   const requestBody = {
     event: $event,
     properties: {
-      ...customFields,
       ...getRequestBodyProperties(event, token),
+      ...customFields,
     },
   }
 
